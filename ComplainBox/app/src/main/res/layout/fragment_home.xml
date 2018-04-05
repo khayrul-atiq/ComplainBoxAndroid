@@ -98,13 +98,14 @@
 
 
                         <at.markushi.ui.CircleButton
+                            android:id="@+id/home_bt_problem_submission"
                             android:layout_width="90dp"
                             android:layout_height="90dp"
+                            android:layout_gravity="center"
                             android:src="@drawable/ic_report_problem_black_24dp"
                             android:tint="#ffffff"
                             app:cb_color="#F44336"
-                            app:cb_pressedRingWidth="8dp"
-                            android:layout_gravity="center"/>
+                            app:cb_pressedRingWidth="8dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -124,13 +125,14 @@
 
 
                         <at.markushi.ui.CircleButton
+                            android:id="@+id/home_bt_emergency_support"
                             android:layout_width="90dp"
                             android:layout_height="90dp"
+                            android:layout_gravity="center"
                             android:src="@drawable/ic_live_help_black_24dp"
                             android:tint="#ffffff"
                             app:cb_color="#4CAF50"
-                            app:cb_pressedRingWidth="8dp"
-                            android:layout_gravity="center"/>
+                            app:cb_pressedRingWidth="8dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -157,6 +159,7 @@
 
 
                         <at.markushi.ui.CircleButton
+                            android:id="@+id/home_bt_event"
                             android:layout_width="90dp"
                             android:layout_height="90dp"
                             android:src="@drawable/ic_event_note_black_24dp"
@@ -183,6 +186,7 @@
 
 
                         <at.markushi.ui.CircleButton
+                            android:id="@+id/home_bt_notice"
                             android:layout_width="90dp"
                             android:layout_height="90dp"
                             android:src="@drawable/ic_description_black_24dp"
@@ -216,6 +220,7 @@
 
 
                         <at.markushi.ui.CircleButton
+                            android:id="@+id/home_bt_application_form"
                             android:layout_width="90dp"
                             android:layout_height="90dp"
                             android:src="@drawable/ic_assignment_black_24dp"
@@ -242,6 +247,7 @@
 
 
                         <at.markushi.ui.CircleButton
+                            android:id="@+id/home_bt_my_profile"
                             android:layout_width="90dp"
                             android:layout_height="90dp"
                             android:src="@drawable/ic_person_black_24dp"

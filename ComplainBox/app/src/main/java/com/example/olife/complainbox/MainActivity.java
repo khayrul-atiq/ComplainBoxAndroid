@@ -21,7 +21,8 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private HashMap < Integer, Fragment > fragmentMap = new HashMap< Integer, Fragment>();
-
+    //public  static  NavigationView navigationView;
+    public void MainActivity(){}
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,10 +46,11 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
+        displaySelectedFragment(R.id.nav_home);
+
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
-        displaySelectedFragment(R.id.nav_home);
+        navigationView.setCheckedItem(R.id.nav_home);
     }
 
     @Override
@@ -74,12 +76,10 @@ public class MainActivity extends AppCompatActivity
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity
 
         return true;
     }
-    private void displaySelectedFragment(int item){
+    public void displaySelectedFragment(int item){
 
         Fragment fragment = fragmentMap.get(item);
 
@@ -100,6 +100,7 @@ public class MainActivity extends AppCompatActivity
             ft.replace(R.id.content_frame, fragment);
             ft.commit();
         }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -116,4 +117,5 @@ public class MainActivity extends AppCompatActivity
         fragmentMap.put(R.id.nav_problem_submission, new ProblemSubmission());
 
     }
+
 }
