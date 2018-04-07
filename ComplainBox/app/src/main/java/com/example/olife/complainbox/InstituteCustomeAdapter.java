@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,13 +16,13 @@ import at.markushi.ui.CircleButton;
  * Created by olife on 4/5/2018.
  */
 
-public class CustomeAdapter extends ArrayAdapter<Information> {
+public class InstituteCustomeAdapter extends ArrayAdapter<InstituteInformation> {
 
 
     private final Context context;
-    private ArrayList<Information> values = new ArrayList<>();
+    private ArrayList<InstituteInformation> values = new ArrayList<>();
 
-    public CustomeAdapter(Context context, ArrayList<Information> values) {
+    public InstituteCustomeAdapter(Context context, ArrayList<InstituteInformation> values) {
         super(context, -1, values);
         this.context = context;
         this.values = values;
@@ -34,9 +33,9 @@ public class CustomeAdapter extends ArrayAdapter<Information> {
 
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         if (convertView == null) {
-            convertView = inflater.inflate(R.layout.layout_row, null);
+            convertView = inflater.inflate(R.layout.layout_institute_row, null);
         }
-        //View rowView = inflater.inflate(R.layout.layout_row, parent, false);
+        //View rowView = inflater.inflate(R.layout.layout_institute_row, parent, false);
         TextView textView1 = (TextView) convertView.findViewById(R.id.institute_name);
         TextView textView2 = (TextView) convertView.findViewById(R.id.institute_location);
 

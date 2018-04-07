@@ -50,6 +50,7 @@ public class Home extends Fragment {
             @Override
             public void onClick(View view) {
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                ft.setCustomAnimations(R.anim.slide_from_right, R.anim.slide_to_left);
                 ft.replace(R.id.content_frame, new EmergencySupport());
                 ft.commit();
             }
@@ -59,6 +60,7 @@ public class Home extends Fragment {
             @Override
             public void onClick(View view) {
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                ft.setCustomAnimations(R.anim.slide_from_right, R.anim.slide_to_left);
                 ft.replace(R.id.content_frame, new ApplicationForm());
                 ft.commit();
             }
@@ -68,6 +70,7 @@ public class Home extends Fragment {
             @Override
             public void onClick(View view) {
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                ft.setCustomAnimations(R.anim.slide_from_right, R.anim.slide_to_left);
                 ft.replace(R.id.content_frame, new ProblemSubmission());
                 ft.commit();
             }
@@ -77,6 +80,7 @@ public class Home extends Fragment {
             @Override
             public void onClick(View view) {
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                ft.setCustomAnimations(R.anim.slide_from_right, R.anim.slide_to_left);
                 ft.replace(R.id.content_frame, new Notice());
                 ft.commit();
             }
@@ -86,6 +90,7 @@ public class Home extends Fragment {
             @Override
             public void onClick(View view) {
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                ft.setCustomAnimations(R.anim.slide_from_right, R.anim.slide_to_left);
                 ft.replace(R.id.content_frame, new Event());
                 ft.commit();
             }
@@ -95,6 +100,7 @@ public class Home extends Fragment {
             @Override
             public void onClick(View view) {
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                ft.setCustomAnimations(R.anim.slide_from_right, R.anim.slide_to_left);
                 ft.replace(R.id.content_frame, new MyProfile());
                 ft.commit();
             }

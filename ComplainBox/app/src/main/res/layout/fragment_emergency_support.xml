@@ -73,7 +73,7 @@
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="@dimen/activity_vertical_margin"
+
                 >
 
 
@@ -81,7 +81,7 @@
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:layout_margin="@dimen/activity_vertical_margin"
-                    android:layout_weight="2"
+                    android:weightSum="2"
                     >
 
                     <LinearLayout
@@ -105,6 +105,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:textAlignment="center"
                             android:text="999"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -132,6 +133,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:textAlignment="center"
                             android:text="Hospital"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -143,6 +145,7 @@
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:layout_margin="@dimen/activity_vertical_margin"
+                    android:weightSum="2"
                     >
 
                     <LinearLayout
@@ -166,6 +169,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:textAlignment="center"
                             android:text="Police Station"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -193,6 +197,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:textAlignment="center"
                             android:text="Fire Station"
                             android:textSize="16sp" />
                     </LinearLayout>

@@ -17,18 +17,24 @@ public class Hospital extends AppCompatActivity {
         this.setTitle("Hospital List");
         listView = findViewById(R.id.list);
 
-        ArrayList<Information> hi = new ArrayList<>();
+        ArrayList<InstituteInformation> hi = new ArrayList<>();
 
-        hi.add(new HospitalInformaion("Dhaka Medicale College","Dhaka bangladesh"));
-        hi.add(new HospitalInformaion("Bogura Medicale College","Bogura bangladesh"));
-        hi.add(new HospitalInformaion("kumilla Medicale College","kumilla bangladesh"));
-        hi.add(new HospitalInformaion("chuttogram Medicale College","chuttogram bangladesh"));
-        hi.add(new HospitalInformaion("jashore Medicale College","jashore bangladesh"));
-        hi.add(new HospitalInformaion("Barishal Medicale College","Barishal bangladesh"));
+        hi.add(new InstituteInformation("Dhaka Medicale College","Dhaka bangladesh"));
+        hi.add(new InstituteInformation("Bogura Medicale College","Bogura bangladesh"));
+        hi.add(new InstituteInformation("kumilla Medicale College","kumilla bangladesh"));
+        hi.add(new InstituteInformation("chuttogram Medicale College","chuttogram bangladesh"));
+        hi.add(new InstituteInformation("jashore Medicale College","jashore bangladesh"));
+        hi.add(new InstituteInformation("Barishal Medicale College","Barishal bangladesh"));
 
 
-        CustomeAdapter adapter = new CustomeAdapter(this,hi);
+        InstituteCustomeAdapter adapter = new InstituteCustomeAdapter(this,hi);
 
         listView.setAdapter(adapter);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        this.overridePendingTransition(R.anim.slide_from_left,R.anim.slide_to_right);
     }
 }

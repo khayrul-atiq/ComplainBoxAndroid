@@ -13,21 +13,27 @@ public class FireStation extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view);
-        this.setTitle("Police Station");
+        this.setTitle("Fire Station");
         listView = findViewById(R.id.list);
 
 
-        ArrayList<Information> pi = new ArrayList<>();
+        ArrayList<InstituteInformation> pi = new ArrayList<>();
 
-        pi.add(new PoliceStationInformation("Sahabug fire","Sahabug,Dhaka bangladesh"));
-        pi.add(new PoliceStationInformation("Romna fire","Romna,Dhaka bangladesh"));
-        pi.add(new PoliceStationInformation("Mirpur 12 fire","Mirpur 12, Dhaka bangladesh"));
-        pi.add(new PoliceStationInformation("Motijil fire","Motijil,Dhaka bangladesh"));
-        pi.add(new PoliceStationInformation("Jattarabari fire","Jattarabari,Dhaka bangladesh"));
-        pi.add(new PoliceStationInformation("Guilistan fire","Gulistan,Dhaka Bangladesh"));
+        pi.add(new InstituteInformation("Sahabug fire","Sahabug,Dhaka bangladesh"));
+        pi.add(new InstituteInformation("Romna fire","Romna,Dhaka bangladesh"));
+        pi.add(new InstituteInformation("Mirpur 12 fire","Mirpur 12, Dhaka bangladesh"));
+        pi.add(new InstituteInformation("Motijil fire","Motijil,Dhaka bangladesh"));
+        pi.add(new InstituteInformation("Jattarabari fire","Jattarabari,Dhaka bangladesh"));
+        pi.add(new InstituteInformation("Guilistan fire","Gulistan,Dhaka Bangladesh"));
 
-        CustomeAdapter adapter = new CustomeAdapter(this,pi);
+        InstituteCustomeAdapter adapter = new InstituteCustomeAdapter(this,pi);
 
         listView.setAdapter(adapter);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        this.overridePendingTransition(R.anim.slide_from_left,R.anim.slide_to_right);
     }
 }

@@ -50,6 +50,7 @@ public class EmergencySupport extends Fragment {
             public void onClick(View view) {
                 Intent i = new Intent(getActivity(), Hospital.class);
                 startActivity(i);
+                getActivity().overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
             }
         });
 
@@ -58,7 +59,7 @@ public class EmergencySupport extends Fragment {
             public void onClick(View view) {
                 Intent i = new Intent(getActivity(), PoliceStation.class);
                 startActivity(i);
-
+                getActivity().overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
             }
         });
 
@@ -67,6 +68,7 @@ public class EmergencySupport extends Fragment {
             public void onClick(View view) {
                 Intent i = new Intent(getActivity(), FireStation.class);
                 startActivity(i);
+                getActivity().overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
             }
         });
     }

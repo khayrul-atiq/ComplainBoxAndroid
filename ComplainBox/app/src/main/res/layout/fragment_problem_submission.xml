@@ -71,38 +71,39 @@
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="@dimen/activity_vertical_margin"
+
                 >
 
 
                 <TableRow
-                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_margin="@dimen/activity_vertical_margin"
-                    android:layout_weight="2"
-                    >
+                    android:weightSum="2">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="vertical">
 
 
                         <at.markushi.ui.CircleButton
+                            android:id="@+id/road_damage"
                             android:layout_width="90dp"
                             android:layout_height="90dp"
-                            android:src="@drawable/ic_999"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_road_damage"
                             android:tint="#ffffff"
-                            app:cb_color="#F44336"
-                            app:cb_pressedRingWidth="8dp"
-                            android:layout_gravity="center"/>
+                            app:cb_color="#3F51B5"
+                            app:cb_pressedRingWidth="8dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:text="Road Damage"
+                            android:textAlignment="center"
                             android:textSize="16sp" />
                     </LinearLayout>
 
@@ -110,25 +111,26 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
                         android:layout_weight="1"
-                        >
+                        android:orientation="vertical">
 
 
                         <at.markushi.ui.CircleButton
+                            android:id="@+id/westage"
                             android:layout_width="90dp"
                             android:layout_height="90dp"
+                            android:layout_gravity="center"
                             android:src="@drawable/ic_westage"
                             android:tint="#ffffff"
                             app:cb_color="#4CAF50"
-                            app:cb_pressedRingWidth="8dp"
-                            android:layout_gravity="center"/>
+                            app:cb_pressedRingWidth="8dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:text="Garbage"
+                            android:textAlignment="center"
                             android:textSize="16sp" />
                     </LinearLayout>
 
@@ -136,32 +138,34 @@
                 </TableRow>
 
                 <TableRow
-                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_margin="@dimen/activity_vertical_margin"
-                    >
+                    android:weightSum="2">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="vertical">
 
 
                         <at.markushi.ui.CircleButton
+                            android:id="@+id/footpath"
                             android:layout_width="90dp"
                             android:layout_height="90dp"
-                            android:src="@drawable/ic_index"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_footpath"
                             android:tint="#ffffff"
                             app:cb_color="#FF9800"
-                            app:cb_pressedRingWidth="8dp"
-                            android:layout_gravity="center"/>
+                            app:cb_pressedRingWidth="8dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:text="Footpath"
+                            android:textAlignment="center"
                             android:textSize="16sp" />
                     </LinearLayout>
 
@@ -169,25 +173,26 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
                         android:layout_weight="1"
-                        >
+                        android:orientation="vertical">
 
 
                         <at.markushi.ui.CircleButton
+                            android:id="@+id/drainage"
                             android:layout_width="90dp"
                             android:layout_height="90dp"
-                            android:src="@drawable/ic_b_icon_ps_drainage"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_drainage"
                             android:tint="#ffffff"
-                            app:cb_color="#03A9F4"
-                            app:cb_pressedRingWidth="8dp"
-                            android:layout_gravity="center"/>
+                            app:cb_color="#9C27B0"
+                            app:cb_pressedRingWidth="8dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:text="Drainage"
+                            android:textAlignment="center"
                             android:textSize="16sp" />
                     </LinearLayout>
 
@@ -195,32 +200,34 @@
                 </TableRow>
 
                 <TableRow
-                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_margin="@dimen/activity_vertical_margin"
-                    >
+                    android:weightSum="2">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="vertical">
 
 
                         <at.markushi.ui.CircleButton
+                            android:id="@+id/road_light"
                             android:layout_width="90dp"
                             android:layout_height="90dp"
-                            android:src="@drawable/ic_roadlight"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_road_light"
                             android:tint="#ffffff"
-                            app:cb_color="#FF9800"
-                            app:cb_pressedRingWidth="8dp"
-                            android:layout_gravity="center"/>
+                            app:cb_color="#795548"
+                            app:cb_pressedRingWidth="8dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:text="Road Light"
+                            android:textAlignment="center"
                             android:textSize="16sp" />
                     </LinearLayout>
 
@@ -228,25 +235,26 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
                         android:layout_weight="1"
-                        >
+                        android:orientation="vertical">
 
 
                         <at.markushi.ui.CircleButton
+                            android:id="@+id/mosquito"
                             android:layout_width="90dp"
                             android:layout_height="90dp"
-                            android:src="@drawable/ic_b_icon_ps_mosquito"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_mosquito"
                             android:tint="#ffffff"
                             app:cb_color="#03A9F4"
-                            app:cb_pressedRingWidth="8dp"
-                            android:layout_gravity="center"/>
+                            app:cb_pressedRingWidth="8dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:text="Mosquito"
+                            android:textAlignment="center"
                             android:textSize="16sp" />
                     </LinearLayout>
 
@@ -255,32 +263,34 @@
 
 
                 <TableRow
-                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_margin="@dimen/activity_vertical_margin"
-                    >
+                    android:weightSum="2">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="vertical">
 
 
                         <at.markushi.ui.CircleButton
+                            android:id="@+id/illegal_parking"
                             android:layout_width="90dp"
                             android:layout_height="90dp"
-                            android:src="@drawable/ic_b_icon_ps_noparking"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_illegal_parking"
                             android:tint="#ffffff"
-                            app:cb_color="#FF9800"
-                            app:cb_pressedRingWidth="8dp"
-                            android:layout_gravity="center"/>
+                            app:cb_color="#F44336"
+                            app:cb_pressedRingWidth="8dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:text="Illegal Parking"
+                            android:textAlignment="center"
                             android:textSize="16sp" />
                     </LinearLayout>
 
@@ -288,25 +298,26 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
                         android:layout_weight="1"
-                        >
+                        android:orientation="vertical">
 
 
                         <at.markushi.ui.CircleButton
+                            android:id="@+id/corruption"
                             android:layout_width="90dp"
                             android:layout_height="90dp"
+                            android:layout_gravity="center"
                             android:src="@drawable/ic_corruption"
                             android:tint="#ffffff"
-                            app:cb_color="#03A9F4"
-                            app:cb_pressedRingWidth="8dp"
-                            android:layout_gravity="center"/>
+                            app:cb_color="#673AB7"
+                            app:cb_pressedRingWidth="8dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:text="Corruption"
+                            android:textAlignment="center"
                             android:textSize="16sp" />
                     </LinearLayout>
 
@@ -315,26 +326,26 @@
 
 
                 <TableRow
-                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
-                    android:layout_margin="@dimen/activity_vertical_margin"
-                    >
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_vertical_margin">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="vertical">
 
 
                         <at.markushi.ui.CircleButton
+                            android:id="@+id/repair"
                             android:layout_width="90dp"
                             android:layout_height="90dp"
+                            android:layout_gravity="center"
                             android:src="@drawable/ic_repair"
                             android:tint="#ffffff"
-                            app:cb_color="#FF9800"
-                            app:cb_pressedRingWidth="8dp"
-                            android:layout_gravity="center"/>
+                            app:cb_color="#009688"
+                            app:cb_pressedRingWidth="8dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -348,19 +359,19 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
                         android:layout_weight="1"
-                        >
+                        android:orientation="vertical">
 
 
                         <at.markushi.ui.CircleButton
+                            android:id="@+id/other"
                             android:layout_width="90dp"
                             android:layout_height="90dp"
+                            android:layout_gravity="center"
                             android:src="@drawable/ic_other"
                             android:tint="#ffffff"
-                            app:cb_color="#03A9F4"
-                            app:cb_pressedRingWidth="8dp"
-                            android:layout_gravity="center"/>
+                            app:cb_color="#607D8B"
+                            app:cb_pressedRingWidth="8dp" />
 
                         <TextView
                             android:layout_width="wrap_content"

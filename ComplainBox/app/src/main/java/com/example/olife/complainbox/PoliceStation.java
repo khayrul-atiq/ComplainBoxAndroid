@@ -17,17 +17,23 @@ public class PoliceStation extends AppCompatActivity {
         listView = findViewById(R.id.list);
 
 
-        ArrayList<Information> pi = new ArrayList<>();
+        ArrayList<InstituteInformation> pi = new ArrayList<>();
 
-        pi.add(new PoliceStationInformation("Sahabug thana","Sahabug,Dhaka bangladesh"));
-        pi.add(new PoliceStationInformation("Romna thana","Romna,Dhaka bangladesh"));
-        pi.add(new PoliceStationInformation("Mirpur 12 thana","Mirpur 12, Dhaka bangladesh"));
-        pi.add(new PoliceStationInformation("Motijil thana","Motijil,Dhaka bangladesh"));
-        pi.add(new PoliceStationInformation("Jattarabari thana","Jattarabari,Dhaka bangladesh"));
-        pi.add(new PoliceStationInformation("Guilistan than","Gulistan,Dhaka Bangladesh"));
+        pi.add(new InstituteInformation("Sahabug thana","Sahabug,Dhaka bangladesh"));
+        pi.add(new InstituteInformation("Romna thana","Romna,Dhaka bangladesh"));
+        pi.add(new InstituteInformation("Mirpur 12 thana","Mirpur 12, Dhaka bangladesh"));
+        pi.add(new InstituteInformation("Motijil thana","Motijil,Dhaka bangladesh"));
+        pi.add(new InstituteInformation("Jattarabari thana","Jattarabari,Dhaka bangladesh"));
+        pi.add(new InstituteInformation("Guilistan than","Gulistan,Dhaka Bangladesh"));
 
-        CustomeAdapter adapter = new CustomeAdapter(this,pi);
+        InstituteCustomeAdapter adapter = new InstituteCustomeAdapter(this,pi);
 
         listView.setAdapter(adapter);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        this.overridePendingTransition(R.anim.slide_from_left,R.anim.slide_to_right);
     }
 }

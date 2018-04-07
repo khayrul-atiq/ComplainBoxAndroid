@@ -1,13 +1,14 @@
 package com.example.olife.complainbox;
 
 /**
- * Created by olife on 4/5/2018.
+ * Created by olife on 4/6/2018.
  */
 
-public class FireStationInfromation {
+public class InstituteInformation {
+
     private String name, location;
 
-    public FireStationInfromation(String name, String location) {
+    public InstituteInformation(String name, String location) {
         this.name = name;
         this.location = location;
     }
